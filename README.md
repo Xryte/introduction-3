@@ -8,7 +8,7 @@ git checkout -b feature
 touch feature1.txt
 git add feature1.txt
 git commit -m "Добавил фичу feature1.txt"
-git push -u origin feature
+git push --set upstream origin feature
 
 git checkout main
 git merge feature -m "Слияние ветки feature в main"
@@ -20,7 +20,7 @@ git checkout -b hotFix
 touch hotFix1.txt
 git add hotFix1.txt
 git commit -m "Добавил фикс hotFix1.txt"
-git push -u origin hotFix
+git push --set upstream origin hotFix
 
 git checkout main
 git merge hotFix -m "Слияние ветки hotFix в main"
